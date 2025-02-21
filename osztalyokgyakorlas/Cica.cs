@@ -131,11 +131,11 @@ namespace osztalyokgyakorlas
 		{
 			if (eletero <= 2)
 			{
-				rendetlensegSzint -=10 ;
+				rendetlensegSzint +=1 ;
 			}
             if (eletero <= 4 && eletero>=3)
             {
-                rendetlensegSzint -= 6;
+                rendetlensegSzint += 2;
             }
             if (eletero >=8)
             {
@@ -185,12 +185,12 @@ namespace osztalyokgyakorlas
 
         public override string ToString()
 		{
-			return $"Neve: {nev}, kora: {kor}, súlya: {suly}, fajtája: {fajta}, \n színe: {szin}, rendetlenségi szintje: {rendetlensegSzint}, fogyasztása: {fogasztas}, éhes e: {ehes}, neme: {nem}, életereje: {eletero} "
-			+  @"
+			return @"
   /\_/\  
  ( o.o ) 
   > ^ <
-";
+" + $"Neve: {nev}, kora: {kor}, súlya: {suly}, fajtája: {fajta}, \n színe: {szin}, rendetlenségi szintje: {rendetlensegSzint}, fogyasztása: {fogasztas}, éhes e: {ehes}, neme: {nem}, életereje: {eletero} ";
+			
 		}
 
 	}

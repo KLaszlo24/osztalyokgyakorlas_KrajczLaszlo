@@ -6,6 +6,8 @@
 		{
 			Cica macska1 = new( "Cicus",3, 6, "Abeszin", "narancs", 30, 2, "hím");
             Console.WriteLine(macska1.ToString());
+            Console.WriteLine();
+            Console.WriteLine();
 
             Console.WriteLine();
 			macska1.KulonTenyezok();
